@@ -74,7 +74,7 @@ body {
   padding: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .nav .text {
     display: none;
   }
@@ -87,5 +87,19 @@ body {
     font-size: 0.6rem;
     display: block;
     text-align: center;
+  }
+
+  .intro {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  .project-container {
+    display: block;
+    width: 95%;
+  }
+
+  .project {
+    margin: 50px 0px;
   }
 }
