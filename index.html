@@ -1,63 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-    <title>Mayan Sharma</title>
-  </head>
-  <body>
-    <div class="nav">
-      <div class="text">
-        <p>Works</p>
-        <p>Contact</p>
-      </div>
-      <h1>Mayan Sharma</h1>
-      <div class="icons">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Mayan Sharma</title>
+</head>
+
+<body>
+
+    <div class="mobile-links">
+      <a href="https://www.linkedin.com/in/mayan-sharma-794544183/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/mayan-sharma"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <button class="resume"><i class="fas fa-file-download"></i> Resume</button>
+  
+
+  <div class="sidebar">
+    <div>
+      <a href="#"><i class="fas fa-campground"></i></a>
+    </div>
+    <div>
+      <a href="#"><i class="fas fa-home"></i></a>
+      <a href="#"><i class="fas fa-dna"></i></a>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/mayan-sharma-794544183/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/mayan-sharma"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="home">
+      <p class="head-1 rellax" data-rellax-speed="5" data-rellax-zindex="1">
+        <!-- <span class="hover">H</span>
+        <span class="hover">E</span>
+        <span class="hover">L</span>
+        <span class="hover">L</span>
+        <span class="hover">O</span>
+        <span class="hover">,</span>
+        <span class="hover">I</span>
+        <span class="hover">'</span>
+        <span class="hover">M</span>
+        <br>
+        <span class="hover">M</span>
+        <span class="hover">A</span>
+        <span class="hover">Y</span>
+        <span class="hover">A</span>
+        <span class="hover">N</span> -->
+        HELLO, I'M <br> MAYAN SHARMA
+      </p>
+      <p class="para-1 rellax" data-rellax-speed="5">{ student }</p>
+      <img src="./css/materials/fig.svg" class="rellax" data-rellax-zindex="0" data-rellax-speed="-2" alt="">
+    </div>
+
+    <div class="about" id="about">
+      <p class="head-1" data-rellax-speed="1" data-aos="zoom-in">ABOUT</p>
+      <p class="para-1" data-rellax-speed="2" data-aos="fade-left">I'm a 3rd year engineering student. <br> 
+         I'm a full stack web developer<br>
+         I have also worked on Machine Learning projects</p>
+    </div>
+
+    <div class="skills" data-rellax-speed="5">
+      <p class="head-1" data-aos="fade-right">SKILLS</p>
+      <div class="skills-container" data-aos="zoom-in">
+        <div>
+          <i class="fab fa-node"></i>
+          <p>Backend</p>
+        </div>
+        <div>
+          <i class="fab fa-css3-alt"></i>
+          <p>Frontend</p>
+        </div>
+        <div>
+          <i class="fab fa-python"></i>
+          <p>Data Science</p>
+        </div>
       </div>
     </div>
-    <div class="intro">
-      <h1>Mayan Sharma</h1>
-      <p>I'm a Web Developer and a student based in Delhi, India</p>
+    
+    <div class="works" data-rellax-speed="6">
+      <p class="head-1" data-aos="fade-right">WORKS</p>
+      <!-- <div class="works-heading" data-aos="fade-up-right">
+        <p class="head-1">WORKS</p>
+        <p><a href="#">See all <i class="fas fa-arrow-right"></i></a></p>
+      </div> -->
+      <div class="skills-container works-container" data-aos="zoom-in-down">
+        <div>
+          <h4>Steve</h4>
+          <p>An ecommerce website</p>
+          <p class="link"><a href="https://steve-front.vercel.app/">See</a></p>
+        </div>
+        <div>
+          <h4>Valor</h4>
+          <p>Slack clone</p>
+          <p class="link"><a href="https://valor-bca2b.web.app/ ">See</a></p>
+        </div>
+        <div>
+          <h4>Goeasytax</h4>
+          <p>Portfolio of a tax company</p>
+          <p class="link"><a href="https://goeasytax.com/">See</a></p>
+        </div>
+        <div>
+          <h4>Blok</h4>
+          <p>Atari breakout game</p>
+          <p class="link"><a href="https://mayan-sharma.github.io/Blok/">See</a></p>
+        </div>
+        <div>
+          <h4>Password Generator</h4>
+          <p class="link"><a href="https://mayan-sharma.github.io/Password-Generator/">See</a></p>
+        </div>
+        <div>
+          <h4>Sorting Visualizer</h4>
+          <p class="link"><a href="https://mayan-sharma.github.io/Sorting-Visualizer/">See</a></p>
+        </div>
+      </div>
     </div>
-    <div class="project-container">
-      <div class="project">
-        <img src="./css/materials/90.jpg" width="100%" height="100%" />
-        <div>
-          <p>Project Name</p>
-          <p>Description</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="./css/materials/90.jpg" width="100%" />
-        <div>
-          <p>Project Name</p>
-          <p>Description</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="./css/materials/90.jpg" width="100%" />
-        <div>
-          <p>Project Name</p>
-          <p>Description</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="./css/materials/90.jpg" width="100%" />
-        <div>
-          <p>Project Name</p>
-          <p>Description</p>
-        </div>
-      </div>
-    </div>
-    <div class="footer">Powered by Plagiarism</div>
-  </body>
+
+   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
