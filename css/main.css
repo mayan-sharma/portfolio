@@ -18,76 +18,38 @@
   transition: .2s ease-in-out;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #2B2B35;
   font-family: vigo;
-  scroll-behavior: smooth;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
-.mobile-links {
-  position: absolute;
-  top: 15px;
-  left: 20px;
-  display: none;
-}
-
-.mobile-links a {
-  color: #fff;
-  font-size: 2rem;
-  margin: 0px 10px;
-}
-
-.resume {
-  position: absolute;
-  color: #fff;
-  top: 10px;
-  right: 2rem;
-  background-color: #7741CF;
-  padding: 1rem;
-  font-size: 1.2rem;
-  border: none;
-  box-shadow: 1px 1px 1px 1px #000;
-  border-radius: .6rem;
-  text-align: center;
-}
-
-.sidebar {
-  height: 100vh;
-  width: 60px;
+.nav {
+  z-index: 1;
+  height: 70px;
+  width: 100%;
   position: fixed;
-  top: 0;
+  background-color: rgb(42, 13, 75, 0.2);
   display: flex;
-  flex-direction: column;
-  text-align: center;
   justify-content: space-between;
-  background-color: #111013;
+  align-items: center;
 }
 
-.sidebar div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 20px 0px;
-}
-
-.sidebar div:nth-child(3) a {
-  font-size: 1.2rem;
-}
-
-.sidebar a {
+.nav a {
   color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
-  margin: 10px;
+  margin: 0 20px;
 }
 
 .content {
-  /* background-color: aquamarine; */
-  margin-left: 60px;
-  padding-left: 2rem;
+  padding: 2rem;
 }
 
 .home {
@@ -104,16 +66,13 @@ body {
   margin-top: -50vh;
   width: 70%;
   z-index: -10;
-  /* background-color: aqua; */
 }
 
 .skills {
   height: 100vh;
-  width: 90%;
 }
 
 .skills-container {
-  /* width: 90%; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -149,22 +108,6 @@ body {
   transform: scale(0.95);
 }
 
-.works {
-  width: 90%;
-}
-
-.works-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.works-heading a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: #fff;
-}
-
 .link a {
   color: #7741CF;
   text-decoration: none;
@@ -173,24 +116,22 @@ body {
 
 @media (max-width: 768px) {
 
-  .mobile-links {
-    display: inline;
+  .head-1 {
+    font-size: 4rem;
   }
 
-  .sidebar {
+  .nav div:nth-child(1) {
     display: none;
   }
 
-  .head-1 {
-    font-size: 4rem;
+  .nav div {
+    margin: auto;
   }
 
   .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
-    padding-left: 0rem;
     text-align: center;
   }
 
@@ -210,7 +151,6 @@ body {
 
   .skills-container div {
     margin: 30px auto;
-    width: 70%;
   }
 
   .works {
